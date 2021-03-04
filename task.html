@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Task</title>
+        <link rel="stylesheet" href="./login.css">
+        <script src="./js/task.js"></script>
+    </head>
+    <body  class="addtask">
+        <main>
+            <form  class="tsk"  id="save-later-form">
+                <div class="container center">
+                    <div>
+                        <h1 style="text-align: center;">
+                            Add Your Task
+                        </h1>
+                    </div>
+                    <div class="four-div">
+                        <label for="name">Title</label>
+                        <input type="text" class="form-control2" name="title" id="title">
+                    </div>
+                    <div class="four-div">
+                        <label for="email">Your Task</label>
+                        <input type="text" class="form-control2" name="task" id="task">
+                    </div>
+                    
+                    <div class="four-div">
+                        <label for="status"><b>Status</b></label>
+                        <select name="status" class="form-control2" id="status">
+                            <option value="1">Pending</option>
+                            <option value="2">Completed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button  class="btn" 
+                        onclick="saveTaskDetails(document.getElementById('title').value,document.getElementById('task').value,document.getElementById('status').value)">
+                        Submit</button>
+                    </div>
+                </form>
+        </main>
+    </body>
+</html>

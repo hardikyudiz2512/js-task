@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./login.css" />
+    <script src="./js/profile.js"></script>
+</head>
+
+<body onload="Getprofileupdate()">
+    <div class="msg" id="msg"></div>
+    <div name="form" id="form">
+        <div class="container">
+            <h1 style="color: black">Profile</h1>
+            <hr />
+            <input type="hidden" name="userid" id="userid"  />
+            <div class="four-div">
+                <label for="name"><b>Name</b></label>
+                <input type="text" class="form-control" placeholder="Enter Name" name="name" id="name" required />
+            </div>
+            <div class="four-div">
+                <label for="email"><b>Email</b></label>
+                <input type="email" class="form-control" placeholder="Enter Email" name="email" id="email" required />
+            </div>
+            <div class="four-div">
+                <label for="mobile"><b>Mobile</b></label>
+                <input type="text" class="form-control" placeholder="Enter Mobile" name="mobile" id="mobile" required />
+            </div>
+            <div class="four-div">
+                <button type="reset" class="registerbtn btn" id="registerbtn"
+                onclick="profileupdate(document.getElementById('userid').value,document.getElementById('name').value,document.getElementById('email').value,document.getElementById('mobile').value)">
+                update
+            </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

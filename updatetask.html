@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <script src="./js/update.js"></script>
+
+    <title>Add Task</title>
+</head>
+<body onload=""class="container content">
+    <div style="color: white; font-size: 30px; font-weight: bold;"> Add New Task </div>
+    <div class="four-div">
+        <input type="hidden" class="form-control2" name="userid" id="userid">
+        <div class="four-div">
+        <label for="title"><b>Title</b></label>
+        <input type="text" class="form-control2" name="title" id="title" placeholder="Title" required>
+    </div>
+<div class="four-div">
+        <label for="desc"><b>Description</b></label>
+        <input type="text"  class="form-control2"name="desc" id="desc" placeholder="Description">
+    </div>
+</div>
+<div class="four-div">
+        <label for="status"><b>Status</b></label>
+        <select name="status" class="form-control2" id="status">
+            <option value="1">Panding</option>
+            <option value="2">Complited</option>
+            <!--<option value="3">Reject</option>-->
+        </select>
+    </div>
+<div class="four-div">
+        <button type="reset" class="btn"
+            onclick="update(document.getElementById('userid').value,document.getElementById('title').value,document.getElementById('desc').value,document.getElementById('status').value)">Update</button>
+        </div>
+        </div>
+
+</body>
+</html>

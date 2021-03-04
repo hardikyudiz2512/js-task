@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>profile</title>
+        <link rel="stylesheet" href="./login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/profile.js"></script>
+    </head>
+<body onload="GetProfileData()">
+    <div class="alert"></div>
+    <div class="container content">
+        <div>
+            <h1 style="color: white;">Your Details</h1>
+        </div>
+        <div class="card">  
+            <h2 class="hero" id="name"></h2>
+            <p class="email" id="email"></p>
+            <p id="dob"></p>
+            <p id="gender"></p>
+            <p id="mobile"></p>
+            <p><button class="btn" onclick="EditPage()">Edit</button></p>
+ 
+        </div>
+
+    </div>
+</body>
+<script src="js/profile.js"></script>
+
+</html>

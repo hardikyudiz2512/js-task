@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" href="./login.css">
+        <meta charset="UTF-8">
+        <script src="./auth/auth.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class="container content">
+        <div class="login-box">
+            <h1>Login</h1>
+        </div>
+        <div class="form">
+            <div class="container center">
+                <div class="four-div">
+                    <label for="name">Email or Phone No</label>
+                    <input type="text" class="form-control" name="name" id="email">
+                </div>
+                <div class="four-div">
+                    <label for="email">Password</label>
+                    <input type="password" class="form-control" name="email" id="psw">
+                </div>
+                <div class="four-div">
+                    <input class="btn btn-white mt-2" id ="password" class="form-control" type="button" onclick="userLogin(document.getElementById('email').value,document.getElementById('psw').value)" value="Sign in">
+                </div>
+                <div class="four-div" style="background-color:transparent">
+                    <span>New registratin?<a href="signup.html" style="color: #ff002f;"> CLICK HERE</a></span>
+                    <span class="psw">Forgot <a href="./forgotpassword.html">password?</a></span>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>

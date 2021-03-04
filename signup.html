@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="./login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./auth/auth.js"></script>
+    </head>
+<body>
+    <div class="alert"></div>
+    <div class="container content">
+        <div class="login-box">
+            <h1>Registration</h1>
+        </div>
+        <form class="form"  id="save-later-form">
+            <div class="container center">
+                <div class="four-div">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <div class="four-div">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <div class="four-div">
+                    <label for="email">Mobile</label>
+                    <input type="number" maxlength="10" class="form-control" name="number" id="mobile">
+                </div>
+                <div class="four-div">
+                    <label for="gender">Gender</label>
+                    <select name="gender" class="form-control">
+                        <option name="gender">Male</option>
+                        <option name="gender">Female</option>
+                        <option name="gender">Other</option>
+                    </select>
+                </div>
+                <div class="four-div">
+                    <label for="email">Date of Birth</label>
+                    <input type="date"  class="form-control" name="dob" id="dob">
+                </div>
+                <div class="four-div">
+                    <label for="email">Password</label>
+                    <input type="password" class="form-control" name="password" id="psw">
+                </div>
+                <div class="four-div">
+                    <input class="btn btn-white mt-2"  id="save" class="form-control" type="submit" value="Sign Up"
+                    onclick="signup(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('mobile').value,'',document.getElementById('dob').value,document.getElementById('psw').value)" >
+                </div>
+                <div class="container signin">
+                    <p>Already have an account? <a  style="color: #ff002f;" href="./login.html">Sign in</a>.</p>
+                </div>
+            </form>
+
+    </div>
+</body>
+</html>
